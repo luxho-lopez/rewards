@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presentación Personal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <img class="profile-img" src="img/me.jpg" alt="Foto de perfil" />
+    <p>¡Hola! Soy</p>
+    <h1>Alfredo López</h1>
+    <p>Bienvenidos a esta unidad, estoy encantado de servirle.</p>
+    <br>
+    <p>Si desea dejar una propina voluntaria en cripto, escanee la moneda de su preferencia...</p>
+
+    <ul class="crypto-selector">
+      <li><a href="#" id="btcBtn" onclick="mostrar('btc', 'btcBtn')">Bitcoin</a></li>
+      <li><a href="#" id="usdtBtn" onclick="mostrar('usdt', 'usdtBtn')">USDT</a></li>
+      <li><a href="#" id="ethBtn" onclick="mostrar('eth', 'ethBtn')">Ethereum</a></li>
+    </ul>
+    
+    <div id="btc" class="crypto-data">
+      <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https://btc.com/14rxvPtyMVYMXKcrxqpyqbVqQfomDKLM5j&size=120x120" alt="Código QR" />
+      <p>Red: <strong>BTC</strong> <span>Bitcoin</span></p>
+      <div class="code-box" id="btcCode">14rxvPtyMVYMXKcrxqpyqbVqQfomDKLM5j</div>
+      <button onclick="copiarAlPortapapeles('btcCode')">Copiar Código</button>
+    </div>
+    
+    <div id="usdt" class="crypto-data" style="display:none">
+      <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https://usdt.com/TSqxcDJtM2sKx1fHByRsoFsNtHTGoF8UAY&size=120x120" alt="Código QR" />
+      <p>Red: <strong>TRX</strong> <span>Tron (TRC20)</span></p>
+      <div class="code-box" id="usdtCode">TSqxcDJtM2sKx1fHByRsoFsNtHTGoF8UAY</div>
+      <button onclick="copiarAlPortapapeles('usdtCode')">Copiar Código</button>
+    </div>
+
+    <div id="eth" class="crypto-data" style="display:none">
+      <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https://eth.com/0xd18d7b6f027a858012de9b52a41fd4c61c35049f&size=120x120" alt="Código QR" />
+      <p>Red: <strong>ETH</strong> <span>Ethereum (ERC20)</span></p>
+      <div class="code-box" id="ethCode">0xd18d7b6f027a858012de9b52a41fd4c61c35049f</div>
+      <button onclick="copiarAlPortapapeles('ethCode')">Copiar Código</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

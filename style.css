@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 360px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.qr {
+    width: 120px;
+    margin: 1rem auto;
+}
+
+.code-box {
+    background-color: #eee;
+    border: 1px dashed #aaa;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    font-family: monospace;
+    user-select: all;
+}
+
+button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.crypto-selector {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.crypto-selector li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    padding: 0.3rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.crypto-selector li a:hover {
+    background-color: #eee;
+}
+
+.crypto-data {
+    margin-top: 1rem;
+}
+
+
+/* ... (Colores por moneda) ... */
+
+.crypto-selector {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.crypto-selector li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    padding: 0.3rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.crypto-selector li a:hover {
+    background-color: #eee;
+}
+
+.crypto-selector li a.active-btc {
+    background-color: #f7931A;
+    color: white;
+}
+
+.crypto-selector li a.active-usdt {
+    background-color: #28A27B;
+    color: white;
+}
+
+.crypto-selector li a.active-eth {
+    background-color: #627EEA;
+    color: white;
+}
