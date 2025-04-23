@@ -11,35 +11,45 @@
     <img class="profile-img" src="img/me.jpg" alt="Foto de perfil" />
     <p>¡Hola! Soy</p>
     <h1>Alfredo López</h1>
-    <p>Bienvenidos a esta unidad, estoy encantado de servirle.</p>
+    <p>Bienvenidos a esta unidad, estoy encantado de servirte.</p>
     <br>
-    <p>Si desea dejar una propina voluntaria en cripto, escanee la moneda de su preferencia...</p>
+    <p>Si desea dejar una propina <strong>voluntaria</strong> en cripto, escanee la moneda de su preferencia...</p>
 
     <ul class="crypto-selector">
-      <li><a href="#" id="btcBtn" onclick="mostrar('btc', 'btcBtn')">Bitcoin</a></li>
-      <li><a href="#" id="usdtBtn" onclick="mostrar('usdt', 'usdtBtn')">USDT</a></li>
-      <li><a href="#" id="ethBtn" onclick="mostrar('eth', 'ethBtn')">Ethereum</a></li>
+      <li><a href="#" id="btcBtn" onclick="mostrar('btc', 'btcBtn')" data-color="#f7931a"><img src="img/btc.png" alt="Bitcoin"> Bitcoin</a></li>
+      <li><a href="#" id="ethBtn" onclick="mostrar('eth', 'ethBtn')" data-color="#627eea"><img src="img/eth.png" alt="Ethereum"> Ethereum</a></li>
+      <li><a href="#" id="usdtBtn" onclick="mostrar('usdt', 'usdtBtn')" data-color="#26a17b"><img src="img/usdt.png" alt="USDT"> USDT</a></li>
+      <li><a href="#" id="piNetwork" onclick="mostrar('pi', 'piNetwork')" data-color="#6d48ff"><img src="img/pi.png" alt="Pi Network"> Pi Network</a></li>
     </ul>
     
     <div id="btc" class="crypto-data">
-      <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https://btc.com/14rxvPtyMVYMXKcrxqpyqbVqQfomDKLM5j&size=120x120" alt="Código QR" />
       <p>Red: <strong>BTC</strong> <span>Bitcoin</span></p>
       <div class="code-box" id="btcCode">14rxvPtyMVYMXKcrxqpyqbVqQfomDKLM5j</div>
       <button onclick="copiarAlPortapapeles('btcCode')">Copiar Código</button>
     </div>
     
     <div id="usdt" class="crypto-data" style="display:none">
-      <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https://usdt.com/TSqxcDJtM2sKx1fHByRsoFsNtHTGoF8UAY&size=120x120" alt="Código QR" />
       <p>Red: <strong>TRX</strong> <span>Tron (TRC20)</span></p>
       <div class="code-box" id="usdtCode">TSqxcDJtM2sKx1fHByRsoFsNtHTGoF8UAY</div>
       <button onclick="copiarAlPortapapeles('usdtCode')">Copiar Código</button>
     </div>
 
     <div id="eth" class="crypto-data" style="display:none">
-      <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?data=https://eth.com/0xd18d7b6f027a858012de9b52a41fd4c61c35049f&size=120x120" alt="Código QR" />
       <p>Red: <strong>ETH</strong> <span>Ethereum (ERC20)</span></p>
       <div class="code-box" id="ethCode">0xd18d7b6f027a858012de9b52a41fd4c61c35049f</div>
       <button onclick="copiarAlPortapapeles('ethCode')">Copiar Código</button>
+    </div>
+
+    <div id="pi" class="crypto-data" style="display:none">
+      <p>Red: <strong>Pi Network</strong> <span></span></p>
+      <div class="code-box" id="piCode">GDLTTR2S462PYB2Y3RTLAXI6E6PTFMPS53KOEGBKCLLXEWISPG2XTXF5</div>
+      <button onclick="copiarAlPortapapeles('piCode')">Copiar Código</button>
+    </div>
+    
+    <br>
+    <div class="contact-info">
+      <p>Comentarios:</p>
+      <a href="mailto:dj_97@outlook.com">Escribeme</a>
     </div>
   </div>
 
